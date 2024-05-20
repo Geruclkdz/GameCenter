@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameCenterController">
+
+    <TilePane fx:id="tilePane" hgap="10" prefColumns="2" vgap="10" />
+      <ImageView fx:id="pongImage" fitHeight="100" fitWidth="100" layoutX="71.0" layoutY="100.0">
+          <image>
+              <Image url="@resources/pong.png" />
+          </image>
+      </ImageView>
+
+      <ImageView fx:id="memoryImage" fitHeight="100" fitWidth="100" layoutX="286.0" layoutY="100.0">
+          <image>
+              <Image url="@resources/CardBack.png" />
+          </image>
+      </ImageView>
+   <Label layoutX="192.0" layoutY="14.0" prefHeight="28.0" prefWidth="72.0" text="Game Center" />
+   <Label layoutX="107.0" layoutY="213.0" prefHeight="17.0" prefWidth="28.0" text="Pong" />
+   <Label layoutX="314.0" layoutY="213.0" text="Memory" />
+
+</AnchorPane>
